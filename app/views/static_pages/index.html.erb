@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Flickr Images</h1>
+
+<div id="static_pages">
+  <%= render "form" %>
+</div>
+
+<div class="photos">
+  <% @photos.each do |photo| %>
+    <img src="<%= Flickr.url_n(photo) %>">
+  <% end %>
+</div>

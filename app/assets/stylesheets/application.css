@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+body {
+  color: #a1c8b0;
+  background-color: #3737c5;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin-top: 10px;
+}

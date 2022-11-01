@@ -1,0 +1,8 @@
+<%= form_with(url: "/", method: 'get') do |form| %>
+
+  <div>
+    <%= form.label :id, 'Flickr ID' %>
+    <%= form.text_field :id %>
+    <%= form.submit %>
+  </div>
+<% end %>
